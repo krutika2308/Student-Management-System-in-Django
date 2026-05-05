@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #10480b, #ACB6E5);
+    min-height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* Form Card */
+#form {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading */
+#form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Labels */
+#form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #444;
+}
+#form input,
+#form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+#form input:focus,
+#form textarea:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.4);
+}
+
+#form textarea {
+    resize: none;
+    height: 80px;
+}
+
+#form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    background: #6c63ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form button:hover {
+    background: #5548d9;
+}
+
+.view-link {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.view-link:hover {
+    background: #555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

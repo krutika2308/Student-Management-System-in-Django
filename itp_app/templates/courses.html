@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses</title>
+    <link rel="stylesheet" href="{% static 'css/coursepage.css' %}">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Explore Our Courses</h1>
+            <p>Upgrade your skills with industry-level courses and practical learning.</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <h2 class="section-title">Our Popular Courses</h2>
+
+        <div class="card-container">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/072/929/774/small/a-finger-touches-a-digital-screen-displaying-a-web-development-interface-with-icons-representing-coding-cloud-computing-database-and-website-design-symbolizing-innovation-and-technological-advancement-photo.jpg" alt="course">
+                <div class="card-content">
+                    <h2>Web Development</h2>
+                    <p>Learn HTML, CSS, JavaScript, React and build real-world websites.</p>
+                    <h3>Fees: ₹12,000</h3>
+                    <a href="{% url 'fees' %}">
+    <button>Enroll Now</button>
+</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYbsJFulTRg3kb36fs2oHH0rDX5C0uJ6HBDQ&s" alt="course">
+                <div class="card-content">
+                    <h2>Python Programming</h2>
+                    <p>Master Python basics, OOP, Django, APIs and automation.</p>
+                    <h3>Fees: ₹10,000</h3>
+                    <a href="{% url 'fees' %}">
+    <button>Enroll Now</button>
+</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://www.mygreatlearning.com/blog/wp-content/uploads/2019/09/What-is-data-science-2.jpg" alt="course">
+                <div class="card-content">
+                    <h2>Data Science</h2>
+                    <p>Learn Data Analysis, Machine Learning & Visualization.</p>
+                    <h3>Fees: ₹18,000</h3>
+                    <a href="{% url 'fees' %}">
+    <button>Enroll Now</button>
+</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*QJZ6W-Pck_W7RlIDwUIN9Q.jpeg" alt="course">
+                <div class="card-content">
+                    <h2>Django Development</h2>
+                    <p>Create backend systems, authentication and databases.</p>
+                    <h3>Fees: ₹14,000</h3>
+                    <a href="{% url 'fees' %}">
+    <button>Enroll Now</button>
+</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKWz8142ox-Oc9RnDGttZjEpZkze5Thuz1A&s" alt="course">
+                <div class="card-content">
+                    <h2>Frontend Development</h2>
+                    <p>Design responsive websites using HTML, CSS, JS & Bootstrap.</p>
+                    <h3>Fees: ₹9,000</h3>
+                    <a href="{% url 'fees' %}">
+    <button>Enroll Now</button>
+</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJeeGFVhbpHgJ61LNdDG6xz4u-Bar0YVXE4Q&s" alt="course">
+                <div class="card-content">
+                    <h2>Digital Marketing</h2>
+                    <p>Learn SEO, social media marketing & online branding.</p>
+                    <h3>Fees: ₹8,500</h3>
+                    <a href="{% url 'fees' %}">
+    <button>Enroll Now</button>
+</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

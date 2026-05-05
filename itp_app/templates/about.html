@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="hero-content">
+            <h1>About Our Institute</h1>
+            <p>Learn, Grow, and Build Your Career With Us</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="About Us">
+            </div>
+
+            <div class="about-text">
+                <h2>Who We Are</h2>
+                <p>
+                    We are a professional training institute focused on helping students
+                    learn practical skills in Web Development, Python, Data Science,
+                    Django, and many other technologies.
+                </p>
+
+                <p>
+                    Our mission is to provide quality education with real-world projects
+                    so students can become job-ready and confident in their careers.
+                </p>
+
+                <a href="{% url 'user_login' %}"><button>Join Us</button></a>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <h3>Experienced Trainers</h3>
+                <p>Learn from skilled professionals with industry experience.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Live Projects</h3>
+                <p>Work on practical projects to gain real experience.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Career Support</h3>
+                <p>Get placement guidance and interview preparation.</p>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

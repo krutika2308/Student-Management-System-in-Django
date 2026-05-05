@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{% static 'css/navbar_page.css' %}">
+    <link rel="stylesheet" href="{% static 'css/addstudent.css' %}">
+</head>
+
+<body>
+
+{% include "navbar.html" %}
+
+<div class="form-container">
+    <form id="form" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <h2>Add Student</h2>
+
+        <label>Name</label>
+        <input type="text" name="name">
+
+        <label>Age</label>
+        <input type="number" name="age">
+
+        <label>Description</label>
+        <textarea name="description"></textarea>
+
+        <label>Image</label>
+        <input type="file" name="Image">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <a href="{% url 'student_list' %}" class="view-link">See List of Students</a>
+</div>
+
+</body>
+</html>

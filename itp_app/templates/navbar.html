@@ -1,0 +1,22 @@
+{% load static %}
+
+<div id="navbar">
+    <div id="logo_img">
+        <img src="https://content.jdmagicbox.com/v2/comp/kolhapur/z3/0231px231.x231.240323140107.r9z3/catalogue/itpreneur-tarabai-park-kolhapur-computer-software-training-institutes-mbregsotbm.jpg" alt="logo">
+    </div>
+
+    <div id="courses">
+        <a href="{% url 'courses'%}">Courses</a>
+        <a href="{% url 'about' %}">About us</a>
+        <a href="{% url 'blog' %}">Blogs</a>
+    </div>
+
+    <div id="student">
+        <a href="{% url 'addStudent' %}" class="btn">Create Student</a>
+        <a href="{% url 'student_list' %}" class="btn">Student List</a>
+        <a href="{% url 'logout' %}" class="btn">Log Out</a>
+
+
+        <!-- <a href="#" class="btn">Contact 📞</a> -->
+    </div>
+</div>

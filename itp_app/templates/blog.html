@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <h1>Our Latest Blogs</h1>
+        <p>Read articles about technology, coding, careers, and learning.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+
+        <div class="blog-container">
+
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" alt="Blog">
+                </div>
+
+                <div class="blog-content">
+                    <span class="category">Programming</span>
+                    <h2>Why Learn Python in 2026?</h2>
+                    <p>
+                        Python is one of the most powerful programming languages used in AI,
+                        Web Development, Automation, and Data Science.
+                    </p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Blog">
+                </div>
+
+                <div class="blog-content">
+                    <span class="category">Web Development</span>
+                    <h2>Frontend vs Backend Development</h2>
+                    <p>
+                        Understand the difference between frontend and backend technologies
+                        and choose the best career path.
+                    </p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" alt="Blog">
+                </div>
+
+                <div class="blog-content">
+                    <span class="category">Career</span>
+                    <h2>Top Skills Every IT Student Needs</h2>
+                    <p>
+                        Improve technical skills, communication, projects, and interview
+                        preparation to succeed.
+                    </p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 4 -->
+            <div class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Blog">
+                </div>
+
+                <div class="blog-content">
+                    <span class="category">Django</span>
+                    <h2>Build Projects with Django</h2>
+                    <p>
+                        Django helps developers create secure and scalable web applications
+                        quickly and easily.
+                    </p>
+                    <a href="#">Read More →</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

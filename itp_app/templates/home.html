@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/land.css' %}">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="navDiv">
+            <div id="logo_img">
+            <img src="https://content.jdmagicbox.com/v2/comp/kolhapur/z3/0231px231.x231.240323140107.r9z3/catalogue/itpreneur-tarabai-park-kolhapur-computer-software-training-institutes-mbregsotbm.jpg" alt="logo">
+            </div>
+
+            <div id="courses">
+                <a href=" ">HOME</a>
+                <a href="{% url 'courses' %}">COURSES</a>
+                <a href="{% url 'about' %}">ABOUT US</a>
+            </div>
+
+            <div id="student">
+                <a href="login" class="btn">Login</a>
+                <a href="contact" class="btn">Contact 📞</a>
+            </div>
+
+        </div>
+
+        <div id="landbtm">
+            <div id="leftDiv">
+                    <div class="text">
+                        <h1>Start Your Learning <br>Journey Today</h1>
+                        <p >
+                            🤷‍♂️Join a vibrant community of learners <br>and transform your 
+                            aspirations into achievements, starting today.
+                        </p>
+                         <div id="btnDiv">
+                            <a href="login"><button id="btn">GET STARTED</button></a>
+                    
+                 </div>
+                    </div>
+
+                    <div class="image">
+                        {% load static %}
+
+                        <img src="{% static 'images/delhi.jpg' %}" alt="girl">
+                    </div>
+                   
+
+            </div>
+
+            <div id="RightDiv">
+                <div id="CardDiv">
+                    <div class="register-card">
+                            <h2 style="color: white; font-weight: 900;">Join Us Now 🚀</h2>
+                            <p>Start learning with industry experts</p>
+
+
+                            <form action="" method="POST">
+                                {% csrf_token %}
+                                <div style="color: aliceblue; font-size: 12px;margin-bottom: 12px;">
+                                {% if error_message %}
+                                    <div class="alert alert-danger" role="alert">
+                                        {{ error_message }}
+                                    </div>
+                                {% endif %}     
+                                </div>
+                                <input type="text" placeholder="First name" name="first_name">
+                                <input type="text" placeholder="Lastname" name="last_name">
+                                <input type="username" name="username" id="" placeholder="username">
+                                <input type="password" placeholder="Password" name="password">
+
+                                <button type="submit">Get Started</button>
+
+                                <p class="login-text">
+                                    Already have an account? <a href="login">Login</a>
+                                </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

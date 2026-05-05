@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Fees</title>
+    <link rel="stylesheet" href="{% static 'css/fees.css' %}">
+</head>
+<body>
+
+    <div class="fees-container">
+        <h1>Course Details</h1>
+
+        <table>
+            <tr>
+                <th>Course Name</th>
+                <th>Fees</th>
+                <th>Duration</th>
+            </tr>
+
+            <tr>
+                <td>Web Development</td>
+                <td>₹12,000</td>
+                <td>3 Months</td>
+            </tr>
+
+            <tr>
+                <td>Python Programming</td>
+                <td>₹10,000</td>
+                <td>2 Months</td>
+            </tr>
+
+            <tr>
+                <td>Data Science</td>
+                <td>₹18,000</td>
+                <td>5 Months</td>
+            </tr>
+
+            <tr>
+                <td>Django Development</td>
+                <td>₹14,000</td>
+                <td>3 Months</td>
+            </tr>
+        </table>
+
+        <a href="{% url 'user_login' %}">
+            <button>Login to Enroll</button>
+        </a>
+    </div>
+
+</body>
+</html>
